@@ -1,0 +1,40 @@
+---
+sourceLocationPrefix: /opt/src
+baselineLinesOfCode: 0
+unicodeNewlines: false
+columnKind: utf32
+primaryLanguage: python
+inProgress:
+  primaryLanguage: python
+  installedExtractors:
+    go:
+     - /root/codeql-home/codeql/go
+    html:
+     - /root/codeql-home/codeql/html
+    ruby:
+     - /root/codeql-home/codeql/ruby
+    csv:
+     - /root/codeql-home/codeql/csv
+    javascript:
+     - /root/codeql-home/codeql/javascript
+    cpp:
+     - /root/codeql-home/codeql/cpp
+    properties:
+     - /root/codeql-home/codeql/properties
+    yaml:
+     - /root/codeql-home/codeql/yaml
+    swift:
+     - /root/codeql-home/codeql/swift
+    xml:
+     - /root/codeql-home/codeql/xml
+    java:
+     - /root/codeql-home/codeql/java
+    python:
+     - /root/codeql-home/codeql/python
+    csharp:
+     - /root/codeql-home/codeql/csharp
+creationMetadata:
+  sha: e0774f2003eb8776d3b2946d237fdbaf65e5f244
+  cliVersion: 2.19.2
+  creationTime: 2024-11-06T11:30:48.715280205Z
+finalised: false

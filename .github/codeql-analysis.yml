@@ -1,0 +1,69 @@
+name: "CodeQL"
+on:
+  push:
+    branches: [ "Test" ]
+  pull_request:
+    branches: [ "Test" ]
+  schedule:
+    
+cron: '5 0 * * 2' # Analyse hebdomadaire chaque mardi à 00:05 UTC
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:
+    
+name: Checkout repository
+    uses: actions/checkout@v2
+
+    
+name: Initialize CodeQL
+    uses: github/codeql-action/init@v2
+    with:
+      languages: 'all'  # Analyse de tous les langages du dépôt
+
+    
+name: Autobuild
+    uses: github/codeql-action/autobuild@v2
+
+    
+name: Perform CodeQL Analysis
+    uses: github/codeql-action/analyze@v2
+name: "CodeQL"
+on:
+  push:
+    branches: [ "Test" ]
+  pull_request:
+    branches: [ "Test" ]
+  schedule:
+    - cron: '5 0 * * 2' # Analyse hebdomadaire chaque mardi à 00:05 UTC
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v2
+      with:
+        languages: 'all'  # Analyse de tous les langages du dépôt
+
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v2
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
